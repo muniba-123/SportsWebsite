@@ -8,10 +8,10 @@ class Footer extends Component {
     return (
       <footer>
         <Row>
-          <Col xl={2} lg={2}>
+          <Col xl={2} lg={2} md={2}>
             <img src={logo} className="footer-logo" />
           </Col>
-          <Col xl={8} lg={8}>
+          <Col xl={8} lg={8} md={8}>
             <ul className="links">
               <li>PRIVACY POLICY</li>
               <li>TERMS OF SERVICE </li>
@@ -25,7 +25,7 @@ class Footer extends Component {
               </p>
             </div>
           </Col>
-          <Col xl={2} lg={2}>
+          <Col xl={2} lg={2} md={2}>
             <img src={img2} className="float-right"/>
           </Col>
         </Row>

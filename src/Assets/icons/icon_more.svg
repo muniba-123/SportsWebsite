@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Events_01GrobalEvent_03standing" transform="translate(-1844.000000, -308.000000)">
+            <g id="Group-8" transform="translate(1696.000000, 300.000000)">
+                <g id="Group-5" transform="translate(148.000000, 8.000000)">
+                    <circle id="Oval" stroke="#979797" fill="#2D2D2D" cx="18" cy="18" r="17.5"></circle>
+                    <g id="Group-3" transform="translate(12.047183, 12.943674)" stroke="#FFFFFF" stroke-width="1.5">
+                        <polyline id="Path-16" points="4.11759455 0 12.1175945 0 12.1175945 8"></polyline>
+                        <line x1="12.1175945" y1="0" x2="0" y2="12.1175945" id="Path-17"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

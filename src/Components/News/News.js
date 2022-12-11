@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import arrowDown from "../../Assets/icons/down-arrow-white.svg";
 import Button from "../Common/Button";
 import Table from "../Players/Table";
 import img1 from "../../Assets/images/slider-img-1.png";
 import { Col, Row } from "reactstrap";
+import FilterModal from "./FilterModal";
 
 class News extends Component {
   constructor(props) {
@@ -12,13 +12,17 @@ class News extends Component {
       showFilter: false,
     };
   }
+  toggleModal=()=>{
+    this.setState({showFilter:!this.state.showFilter});
+  }
   render() {
     const { showFilter } = this.state;
     return (
+      <>
       <div className="page-wrap news-wrap">
-        <div className="page-inner-wrap pt-0 mx-4">
-        <Button label="Filter" className="search-btn" onClick={()=>this.setState({showSubMenu:!showFilter})}/>
-        <div className={`details-block mt-4`} >
+        <div className="page-inner-wrap pt-0  mx-4">
+        <Button label="Filter" className="search-btn" onClick={()=>this.toggleModal()}/>
+        <div className={`details-block p-0 mt-4`} >
             <div className='details-inner-block'>
                 <div className='d-flex align-items-baseline'>
                     <Row className='item-details-block'>
@@ -67,6 +71,10 @@ class News extends Component {
         </div>
       </div>
       </div>
+      {
+        showFilter &&
+        <FilterModal closeModal={this.toggleModal}/>}
+      </>
     );
   }
 }

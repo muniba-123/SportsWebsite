@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/16px/search</title>
+    <g id="-Template" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Events_02AllEvent_filter" transform="translate(-1619.000000, -446.000000)" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="filter" transform="translate(0.000000, 333.000000)">
+                <g id="Group" transform="translate(1617.000000, 110.000000)">
+                    <g id="Group-5" transform="translate(12.523500, 11.894997) scale(-1, 1) translate(-12.523500, -11.894997) translate(3.000000, 4.000000)">
+                        <path d="M3.73216492,10.601249 C3.42460689,9.75719227 3.25614111,8.84574922 3.25614111,7.89542945 C3.25614111,3.53518955 6.79133066,0 11.1515706,0 C15.5118105,0 19.047,3.53518955 19.047,7.89542945 C19.047,12.2556693 15.5118105,15.789995 11.1515706,15.789995" id="Stroke-1"></path>
+                        <polyline id="Stroke-3" points="7.40126317 6.85612519 3.70106355 10.7455248 0 6.85612519"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -16,7 +16,7 @@ class Home extends Component {
     return (
       <>
         <Main />
-        <Row className="w-100">
+        <Row className="home-page w-100">
             <Col xl={6}>
           <Slider
             activeIndex={activeIndex}

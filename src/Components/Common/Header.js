@@ -3,49 +3,30 @@ import LeftMenu from "./LeftMenu";
 import logo from "../../Assets/images/logo-black.jpeg";
 import arrowDown from "../../Assets/icons/down-arrow.svg";
 import arrowDownRed from "../../Assets/icons/down-arrow-red.svg";
+import menu from "../../Assets/icons/menu-icon.svg";
+
 import web from "../../Assets/icons/web.svg";
 import { Link, useNavigate } from "react-router-dom";
-const menuOptions = [
-  {
-    text: "Events",
-    path: "/",
-    subMenu: [
-      { text: "Global Events", path: "/" },
-      { text: "All Events", path: `/` },
-      { text: "PNC 2022", path: "/" },
-    ],
-  },
-  { text: "Teams", path: "/teams" },
-  { text: "Players", path: `/players` },
-  { text: "Stats", path: "/stats" },
-  { text: "News", path: "/news" },
-  { text: "Pubg esports", path: `/pubgesports` },
-];
-const languages=[{id:1,text:"English"},{id:1,text:"English"},{id:1,text:"English"}]
 class Header extends Component {
   constructor(props) {
-   
     super(props);
     this.state = {
-      showLeftMenu: false,
-      active: 0,
       showSubMenu: null,
       showLanuages:false
     };
   }
-
   render() {
-    const {showLeftMenu,showSubMenu,active,showLanuages}=this.state;
+    const {showSubMenu,showLanuages}=this.state;
+    const {languages,menuOptions,showLeftMenu,toggleMenu}=this.props;
+
     return (
       <>
         <header>
           <div
             className="large-hidden"
-            onClick={() => {
-              this.setState({ showLeftMenu: !showLeftMenu });
-            }}
+            onClick={() => toggleMenu()}
           >
-            <img src="assets/img/burgerIcon.jpg" className="menuIcon" />
+            <img src={menu} className="menuIcon" />
           </div>
           <div className="header-logo">
             <img src={logo} />
@@ -54,20 +35,12 @@ class Header extends Component {
             <ul className="menu-items">
               {menuOptions?.map((item, i) => (
                 <li
-                  className={`menu-item ${
-                    i === active ? "active" : ""
-                  }`}
+                  className={`menu-item`}
                   key={i}
-                  // onClick={() => {
-                  //   this.setState({ active: i });
-                  //  history.push(item.path);
-                  // }}
-
                    onMouseEnter={()=>{if(item.subMenu) this.setState({showSubMenu:i})}}
                    onMouseLeave={()=>{if(item.subMenu) this.setState({showSubMenu:null})}}
                 >
                   <Link to={item.path}> {item.text}</Link>
-                 
                   {item.subMenu && (
                     <img className="sub-menu-icon" src={showSubMenu===i?arrowDownRed: arrowDown} />
                   )}
@@ -76,12 +49,8 @@ class Header extends Component {
                       <div className="triangle"></div>
                       <ul>
                         {menuOptions[i].subMenu?.map((subMenuItem, i) => (
-                          <li
-                            onClick={() => {
-                              this.props.history.push(subMenuItem.path);
-                            }}
-                          >
-                            {subMenuItem.text}
+                          <li>
+                             <Link to={subMenuItem.path}> {subMenuItem.text}</Link>
                           </li>
                         ))}
                       </ul>
@@ -108,17 +77,7 @@ class Header extends Component {
           }
           </div>
         </header>
-        <LeftMenu
-          menuOptions={menuOptions}
-          showLeftMenu={showLeftMenu}
-          toggleMenu={() => {
-            this.setState({ showLeftMenu: !showLeftMenu });
-          }}
-          active={active}
-          setActive={(i) => {
-            this.setState({ active: i });
-          }}
-        />
+       
       </>
     );
   }

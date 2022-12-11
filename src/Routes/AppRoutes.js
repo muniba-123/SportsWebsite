@@ -4,6 +4,9 @@ import {
   Routes,
 } from "react-router-dom";
 import Layout from "../Components/Common/Layout";
+import Esports from "../Components/Esports/Esports";
+import Events from "../Components/Events/Events";
+import GlobalEvents from "../Components/Events/GlobalEvents";
 import Home from "../Components/Home/Home";
 import News from "../Components/News/News";
 import Players from "../Components/Players/Players";
@@ -21,12 +24,13 @@ let AppRoutes = () => {
             <Route path="/players" exact element={<Players />} />
             <Route path="/stats" exact element={<Stats />} />
             <Route path="/news" exact element={<News />} />
-
+            <Route path="/pubgesports" exact element={<Esports />} />
+            <Route path="/globalevents" exact element={<GlobalEvents />} />
+            <Route path="/allevents" exact element={<Events />} />
+            <Route path="/pgc2022" exact element={<GlobalEvents />} />
             <Route path="*" element={<Home />} />
-
           </Routes>
         </Layout>
-      
     </>
   );
 };
