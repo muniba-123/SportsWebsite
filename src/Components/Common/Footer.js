@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../../Assets/images/logo-black.jpeg";
+import logo from "../../Assets/images/logo-white-noBg.png";
 import img2 from "../../Assets/images/img_violence.svg";
 import { Col, Row } from "reactstrap";
 

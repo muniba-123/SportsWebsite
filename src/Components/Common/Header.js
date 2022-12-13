@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import LeftMenu from "./LeftMenu";
-import logo from "../../Assets/images/logo-black.jpeg";
+import logo from "../../Assets/images/logo-white-noBg.png";
 import arrowDown from "../../Assets/icons/down-arrow.svg";
 import arrowDownRed from "../../Assets/icons/down-arrow-red.svg";
 import menu from "../../Assets/icons/menu-icon.svg";

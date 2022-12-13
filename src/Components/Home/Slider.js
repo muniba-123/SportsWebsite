@@ -42,6 +42,7 @@ class Slider extends Component {
                                     </div>
                                     <div className='item-details'>
                                         <div className='item-name'>ANNOUNCEMENT/GENERAL</div>
+                                        <div className='line'></div>
                                         <p className='description'>
                                         Global Partner Team Program Application Announcement...
                                         </p>

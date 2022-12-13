@@ -1,5 +1,9 @@
+  /* ******************Themes are here.... You can apply any theme by commenting out current theme and uncommenting desired one********* */
+
+
+/*Default-theme-1 Red-white-black theme */
 :root {
-  --background-primary: #000;
+  --background-primary: red;
   --background-secondary: #fff;
   --light-bg:#232121;
   --bg-3: #111111;
@@ -8,6 +12,90 @@
   --btn-bg: #b6082e;
   --border-clr:#252628;
 }
+
+/*Theme-1 Green-white-black theme */
+
+
+:root {
+  --background-primary: #076c67;
+  --background-secondary: #000;
+  --light-bg:#076c67;
+  --bg-3: #076c67;
+  --font-primary: #ffffff;
+  --font-secondary:#fff;
+  --btn-bg: #000;
+  --border-clr:#ffffff;
+}
+
+
+
+/*Theme-2 Red-white-black theme */
+
+
+/* :root {
+  --background-primary: #b6082e;
+  --background-secondary: #000;
+  --light-bg:#b6082e;
+  --bg-3: #b6082e;
+  --font-primary: #ffffff;
+  --font-secondary:#fff;
+  --btn-bg: #000;
+  --border-clr:#ffffff;
+} */
+
+/*Theme-3 Brown-white-black theme */
+
+/* :root {
+  --background-primary: #8B775F;
+  --background-secondary: #000;
+  --light-bg:#8B775F;
+  --bg-3: #8B775F;
+  --font-primary: #ffffff;
+  --font-secondary:#8B775F;
+  --btn-bg: #000;
+  --border-clr:#ffffff;
+} */
+
+
+/*Theme-4 Dark-Brown-white-black theme */
+
+/* :root {
+  --background-primary: #332E29;
+  --background-secondary: #000;
+  --light-bg:#332E29;
+  --bg-3: #332E29;
+  --font-primary: #ffffff;
+  --font-secondary:#000;
+  --btn-bg: #EF7A2E;
+  --border-clr:#ffffff;
+} */
+
+/*Theme-5 Blue-white-black theme */
+
+/* :root {
+  --background-primary: #090125;
+  --background-secondary: #090125;
+  --light-bg:#090125;
+  --bg-3: #090125;
+  --font-primary: #ffffff;
+  --font-secondary:#ffffff;
+  --btn-bg: #090125;
+  --border-clr:#ffffff;
+} */
+
+/*Theme-6 Blue-yellow-black theme */
+
+/* :root {
+  --background-primary: #090125;
+  --background-secondary: #090125;
+  --light-bg:#090125;
+  --bg-3: #090125;
+  --font-primary: #efc50b;
+  --font-secondary:#efc50b;
+  --btn-bg: #090125;
+  --border-clr:#efc50b;
+} */
+
 /* ***********************************General Layout styling********************** */
 html {
   scroll-behavior: smooth;
@@ -390,7 +478,7 @@ header {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
-  border-bottom: 1px solid var(--btn-bg);
+  border-bottom: 1px solid var(--font-primary);
   width: 100%;
   /* overflow: hidden; */
 }
@@ -420,7 +508,7 @@ header .header-logo img {
   padding: 34px 0;
 }
 .menu-items .menu-item:hover {
-  color: var(--btn-bg);
+  color: var(--font-secondary);
 }
 .menu-items .menu-item .sub-menu-icon {
   width: 8px;
@@ -601,11 +689,13 @@ header .header-right .sub-menu .triangle {
   object-fit: cover;
 }
 .item-details-block .item-block .item-details {
-  padding: 10px 11px;
+  padding: 34px 60px;
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
   background: var(--background-primary);
+  border: 1px solid var(--font-primary);
+  border-top: none;
 }
 .item-details-block .item-block .item-details .item-name {
   font-weight: 600;
@@ -623,7 +713,8 @@ header .header-right .sub-menu .triangle {
 }
 .item-details-block .item-block .item-details .description {
   margin-bottom: 0;
-  max-height: 53px;
+  margin-top: 8px;
+  max-height:49px;
   overflow: hidden;
   line-height: normal;
   text-transform: uppercase;
@@ -632,7 +723,7 @@ header .header-right .sub-menu .triangle {
 .item-details-block .item-block .item-details .time {
   font-weight: 600;
   font-size: 12px;
-  color: var(--btn-bg);
+  color: var(--font-secondary);
   letter-spacing: 0;
   margin-top: 16px;
 }
@@ -688,6 +779,7 @@ header .header-right .sub-menu .triangle {
   height: 110px;
   background-color: var(--bg-3);
   text-align: center;
+  border: 1px solid var(--font-primary);
 }
 .sm-list li {
   font-size: 55px;
@@ -858,6 +950,7 @@ table tr td .tbl-img {
   display: flex;
   align-items: center;
   width: 260px;
+  border: 1px solid;
 }
 .page-wrap .menu-item:hover {
   background-color: var(--btn-bg);
@@ -870,7 +963,7 @@ table tr td .tbl-img {
   left: 0px;
   background-color: var(--light-bg);
   width: 259px;
-  border: 1px solid var(--border-clr);
+  border: 1px solid var(--font-primary);
   padding: 0;
   width: 100%;
 }
@@ -1013,7 +1106,7 @@ table tr td .tbl-img {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--btn-bg);
+  color: var(--font-secondary);
   margin: 0;
 }
 .esports-page .item-details-block .item-block .item-details .icon {
