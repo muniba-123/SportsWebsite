@@ -2,7 +2,7 @@
 
 
 /*Default-theme-1 Red-white-black theme */
-:root {
+/* :root {
   --background-primary: red;
   --background-secondary: #fff;
   --light-bg:#232121;
@@ -11,12 +11,12 @@
   --font-secondary:#000;
   --btn-bg: #b6082e;
   --border-clr:#252628;
-}
+} */
 
 /*Theme-1 Green-white-black theme */
 
 
-:root {
+/* :root {
   --background-primary: #076c67;
   --background-secondary: #000;
   --light-bg:#076c67;
@@ -25,14 +25,14 @@
   --font-secondary:#fff;
   --btn-bg: #000;
   --border-clr:#ffffff;
-}
+} */
 
 
 
 /*Theme-2 Red-white-black theme */
 
 
-/* :root {
+:root {
   --background-primary: #b6082e;
   --background-secondary: #000;
   --light-bg:#b6082e;
@@ -41,7 +41,7 @@
   --font-secondary:#fff;
   --btn-bg: #000;
   --border-clr:#ffffff;
-} */
+}
 
 /*Theme-3 Brown-white-black theme */
 
